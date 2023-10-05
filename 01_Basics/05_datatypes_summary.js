@@ -16,7 +16,7 @@ let userEmail; // undefined
 const id = Symbol('123');
 const anotherId = Symbol('123');
 
-console.log(id == anotherId);// false (both are unique)
+// console.log(id == anotherId);// false (both are unique)
 
 
 const bigNumber = 172637177872781848477636n; // BigInt
@@ -33,13 +33,39 @@ let myObj = {
 }
 
 const myFunction = function(){
-    console.log("Hello world");
+    // console.log("Hello world");
 }
 
-console.log(typeof(bigNumber));
-console.log(typeof(outsideTemp)); // object (null ka typeof object aata hai)
-console.log(typeof(myFunction)); // function (also called as function object)
+// console.log(typeof(bigNumber));
+// console.log(typeof(outsideTemp)); // object (null ka typeof object aata hai)
+// console.log(typeof(myFunction)); // function (also called as function object)
 
 // type of non primitives are object
 
-console.log(typeof(id)); // symbol ka type symbol hai
+// console.log(typeof(id)); // symbol ka type symbol hai
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Refer Image 1
+//Stack (Primitive) will get copy of variable stored in stack, 
+//Heap (Non-Primitive) will get reference (variable will be stored in stack and will point to heap where actual object data is stored)
+
+let myYoutubeName ="Tejasvlog";
+
+let anothername = myYoutubeName;
+anothername = "Tejasvines"
+
+console.log(myYoutubeName);
+console.log(anothername);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "Tejas@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
