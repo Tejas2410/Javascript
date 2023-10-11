@@ -46,3 +46,4 @@ const myn2 = myArr.splice(1 , 3); // delete element of index 1 to index 2 in mai
 console.log(myn2);
 console.log("C ", myArr);
 
+
