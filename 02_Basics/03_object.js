@@ -53,3 +53,23 @@ console.log(JsUser.greetings); //[Function (anonymous)]
 console.log(JsUser.greetings()); //Hello JS user
 
 console.log(JsUser.greetingsTwo()); //Hello JS user , Tejas
+
+// API (apna kaam kisi aur ko dedo)
+
+//JSON like obj but keys are in string and obj has a name
+
+// {
+//     "course": "javascript",
+//     "fees":"free",
+//     "instructor":"hitesh"
+// }
+
+//can also be array
+[
+    {
+
+    },
+    {
+
+    }
+]

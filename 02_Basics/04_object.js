@@ -92,3 +92,22 @@ const course = {
 const {courseInstructor: instructor} = course;
 console.log(instructor); // hitesh
 
+// API (apna kaam kisi aur ko dedo)
+
+//JSON like obj but keys are in string and obj has a name
+
+// {
+//     "course": "javascript",
+//     "fees":"free",
+//     "instructor":"hitesh"
+// }
+
+//can also be array
+[
+    {
+
+    },
+    {
+
+    }
+]
